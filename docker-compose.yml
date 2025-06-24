@@ -7,9 +7,9 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: assignment
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: 
     ports:
-      - "3306:3306"
+      - "3307:3306"
     networks:
       - spring-net
     volumes:
@@ -24,7 +24,7 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/assignment
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_DATASOURCE_PASSWORD: 
       SPRING_JPA_HIBERNATE_DDL_AUTO: update
       SPRING_JPA_SHOW_SQL: "true"
       SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.MySQL8Dialect
