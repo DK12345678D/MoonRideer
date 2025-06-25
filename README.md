@@ -16,19 +16,28 @@ Design and build a web service to reconcile contact identities (email/phone) acr
 - Handles duplicate and partial data smartly
 - Supports contact merging with linkedId and linkPrecedence logic
 
-### 📦 JSON Request Example
-```json
+🔽 JSON Request Example
+json
+Copy
+Edit
 {
   "email": "doc@example.com",
   "phoneNumber": "9876543210"
 }
-JSON Response Example
-```json
+🔼 JSON Response Example
+json
+Copy
+Edit
 {
   "contact": {
     "primaryContactId": 1,
-    "emails": ["doc@example.com", "drchandra@flux.net"],
-    "phoneNumbers": ["9876543210"],
+    "emails": [
+      "doc@example.com",
+      "drchandra@flux.net"
+    ],
+    "phoneNumbers": [
+      "9876543210"
+    ],
     "secondaryContactIds": [2, 3]
   }
 }
