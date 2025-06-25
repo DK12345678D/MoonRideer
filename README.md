@@ -22,4 +22,13 @@ Design and build a web service to reconcile contact identities (email/phone) acr
   "email": "doc@example.com",
   "phoneNumber": "9876543210"
 }
-
+JSON Response Example
+```json
+{
+  "contact": {
+    "primaryContactId": 1,
+    "emails": ["doc@example.com", "drchandra@flux.net"],
+    "phoneNumbers": ["9876543210"],
+    "secondaryContactIds": [2, 3]
+  }
+}
